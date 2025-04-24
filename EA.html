@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth and Bloom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .mission-section, .tech-edge-section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .mission-section h1, .tech-edge-section h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .mission-section p, .tech-edge-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .feature {
+            width: 30%;
+        }
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="container">
+                    <div className="mission-section">
+                        <h1>Our Mission</h1>
+                        <p>At Earth and Bloom, we're committed to revolutionizing agriculture through sustainable practices and innovative technology.</p>
+                        <div className="features">
+                            <div className="feature">
+                                <h3>Sustainability</h3>
+                                <p>Our farming practices prioritize environmental stewardship and long-term ecosystem health.</p>
+                            </div>
+                            <div className="feature">
+                                <h3>Transparency</h3>
+                                <p>We believe in complete transparency in our farming processes and supply chain.</p>
+                            </div>
+                            <div className="feature">
+                                <h3>Community</h3>
+                                <p>Building strong partnerships with local communities and fostering sustainable growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="tech-edge-section">
+                        <h1>Our Technological Edge</h1>
+                        <p>Leveraging cutting-edge technology to optimize farming practices and ensure sustainable growth.</p>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
